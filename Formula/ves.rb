@@ -6,7 +6,7 @@ class Ves < Formula
   # v1.35 with libves-1.35.tar.gz attached; the sha256 below is from:
   #   shasum -a 256 libves-1.35.tar.gz
   url "https://github.com/vesvault/libVES.c/releases/download/v1.35/libves-1.35.tar.gz"
-  sha256 "772de17e777d9d3166e90da67b6bc0401c2ea3277c56c53de1a12525b25c3e3f"
+  sha256 "520f0aadc6f7b767607d9015f55ff0e2b3811a544770af8387e317b42bedf521"
   license "Apache-2.0"
 
   # Post-quantum key exchange is a required feature of these packages.
