@@ -2,11 +2,11 @@ class Snif < Formula
   desc "End-to-end TLS trust relay for devices behind NAT (SNI forwarder + CA proxy)"
   homepage "https://snif.host"
   # Built from the `make dist` tarball (ships a pre-generated ./configure, so no
-  # autotools are needed at install time). Create a GitHub release tagged v1.12
-  # with snif-1.12.tar.gz attached; the sha256 below is from:
-  #   shasum -a 256 snif-1.12.tar.gz
-  url "https://github.com/vesvault/snif/releases/download/v1.12/snif-1.12.tar.gz"
-  sha256 "d466bdd960afec1b77b26a54db254b700818c8516d70ca725ea5a7e87f8411a1"
+  # autotools are needed at install time). Create a GitHub release tagged v1.13
+  # with snif-1.13.tar.gz attached; the sha256 below is from:
+  #   shasum -a 256 snif-1.13.tar.gz
+  url "https://github.com/vesvault/snif/releases/download/v1.13/snif-1.13.tar.gz"
+  sha256 "84331938c989e45ba37be5a70c70bc16da10aadeb67d9a06d0e0cbc995c06d5e"
   license "Apache-2.0"
 
   depends_on "openssl@3"
