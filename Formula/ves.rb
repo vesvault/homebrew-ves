@@ -3,10 +3,10 @@ class Ves < Formula
   homepage "https://ves.host"
   # Built from the `make dist` tarball (ships a pre-generated ./configure, so
   # no autotools are needed at install time). Create a GitHub release tagged
-  # v1.35 with libves-1.35.tar.gz attached; the sha256 below is from:
-  #   shasum -a 256 libves-1.35.tar.gz
-  url "https://github.com/vesvault/libVES.c/releases/download/v1.35/libves-1.35.tar.gz"
-  sha256 "520f0aadc6f7b767607d9015f55ff0e2b3811a544770af8387e317b42bedf521"
+  # v1.37 with libves-1.37.tar.gz attached; the sha256 below is from:
+  #   shasum -a 256 libves-1.37.tar.gz
+  url "https://github.com/vesvault/libVES.c/releases/download/v1.37/libves-1.37.tar.gz"
+  sha256 "4eb681375fd9b7f2ae1b5dfed898eeac5e88a4458482001d2d4a79080d1526e7"
   license "Apache-2.0"
 
   # Post-quantum key exchange is a required feature of these packages.
@@ -29,8 +29,8 @@ class Ves < Formula
   end
 
   test do
-    # --version prints "VES CLI <x> (libVES.c 1.35) ..."
-    assert_match "1.35", shell_output("#{bin}/ves --version")
+    # --version prints "VES CLI <x> (libVES.c 1.37) ..."
+    assert_match "1.37", shell_output("#{bin}/ves --version")
 
     # -Gl lists the compiled-in Vault Key algorithms; ML-KEM proves the
     # post-quantum (liboqs) suite is linked in.
